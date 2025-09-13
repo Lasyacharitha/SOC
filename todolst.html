@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolistapp</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Todo List</title>
+    <centre><h1> Todo List of add, mark as complete and Delete the Task </h1>
+    </head>
+    <style>
+    /* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 20px;
+  color: #333;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Box Styling */
+.box {
+  border: 2px solid #444;
+  padding: 15px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Highlight Class (toggleClassBtn will apply this) */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+  border-color: #ff9800;
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  margin: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  background: #007bff;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+</style>
+<body>
+    <input type="text" id="taskInput" placeholder="Enter the task"/>
+    <button id="addTask">Add</button>
+    <ol type="1" id ="taskList"></ol>
+    <script src="assest/js/todolst.js"></script>
+    
+</body>
+</centre>
+</html>
